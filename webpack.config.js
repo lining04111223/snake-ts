@@ -23,12 +23,12 @@ module.exports = {
     module: {
         rules: [
          
-            {
-                test: /\.ts$/,
-                use: 'ts-loader',
-                exclude:/node-modules/
+            // {
+            //     test: /\.ts$/,
+            //     use: 'ts-loader',
+            //     exclude:/node-modules/
 
-            }
+            // }
        ] 
 
 
