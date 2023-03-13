@@ -23,12 +23,37 @@ module.exports = {
     module: {
         rules: [
          
-            // {
-            //     test: /\.ts$/,
-            //     use: 'ts-loader',
-            //     exclude:/node-modules/
+            {
+                test: /\.ts$/,
+                use: [
+                    {
 
-            // }
+                        loader: "babel-loader",
+                        options: {
+                            presets: [
+                               
+                                "@bable/preset-env",
+                                {
+                                    targets: {
+                                      "chrome":"88"
+                                    },
+                                    "corejs": "3",
+                                    "useBuiltIns":"usage"
+
+
+                              }  
+                           ] 
+
+
+                        }
+
+                    }
+                    'ts-loader'
+                ],
+                //排除的文件
+                exclude:/node-modules/
+
+            }
        ] 
 
 
