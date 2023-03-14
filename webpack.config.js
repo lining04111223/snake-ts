@@ -31,23 +31,23 @@ module.exports = {
                         loader: "babel-loader",
                         options: {
                             presets: [
-                               
-                                "@bable/preset-env",
-                                {
-                                    targets: {
-                                      "chrome":"88"
-                                    },
-                                    "corejs": "3",
-                                    "useBuiltIns":"usage"
+                                [
+                                    "@bable/preset-env",
+                                    {
+                                        targets: {
+                                            "chrome": "88"
+                                        },
+                                        "corejs": "3",
+                                        "useBuiltIns": "usage"
 
 
-                              }  
-                           ] 
+                                    }
+                                ] 
 
-
+                            ]
                         }
 
-                    }
+                    },
                     'ts-loader'
                 ],
                 //排除的文件
